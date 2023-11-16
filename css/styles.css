@@ -28,11 +28,12 @@ header {
 nav{
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  
+  justify-content: space-around;
+
   max-width: 1140px ;
   padding:  1rem 0;
   margin: 0 auto; 
+
 }
 
 
@@ -43,7 +44,20 @@ a{
   font-size: 1rem;
 } 
 
+.home__main{
+  max-width: 1140px;
+  
+  align-items: center;
+  margin: 0 auto;
+  
+  background-color: crimson;
+}
 
 
+.home__banner{
+  display: flex;
+  background-image: url(assets/banner);
+
+}
 
 
