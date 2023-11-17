@@ -104,12 +104,47 @@ a{
 }
 
 .home__servicesText p {
-  
   padding-top: 2.5rem;
   text-align: center;
   margin: auto 10%;
-  
   font-size: 1.5rem;
+}
+
+
+
+.home__cardServices{
+  background-color: var(--bg-primary-color);
+  height: 341px;
+  border-radius: 24px;
+  margin-bottom: 1.5rem;
+}
+
+.home__cardDescription{
+  display: flex;
+}
+
+.home__cardText{
+  margin: auto 5%;
+}
+
+.home__cardText h3{
+  font-size: 2.5rem;
+  font-weight: medium;
+  color: var(--title-attention-color);
+  padding-bottom: 1rem;
+}
+
+.home__cardText p{
+  font-size: 1.3rem;
+  font-weight: medium;
+  color: var(--title-primary-color);
+  
+}
+
+
+.home__cardImagem{
+  padding-top: 20px;
+  padding-right: 26px;
 }
 
 
