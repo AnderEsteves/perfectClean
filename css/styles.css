@@ -363,3 +363,57 @@ a{
   margin-top: 2.5rem;
   font-weight: 500;
 }
+
+
+
+
+
+.home__aboutus{
+  height: 899px;
+  background-color: var(--bg-secundary-color);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__aboutusTitle{
+  max-width: 1140px;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.home__aboutusTitle h2{
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+
+.home__aboutusBox{
+  max-width: 1140px;
+  margin: auto 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.home__aboutusBox p{
+  width: 637px;
+  height: 670px;
+  background-color: #e7e6e3;
+  border-radius: 24px;
+
+  font-size: 1.5rem;
+
+  margin: auto 2%;
+  padding: 1.5rem 2rem;
+}
+
+.home__aboutusBox img{
+  width: 402px;
+  height: 474px;
+  border-radius: 24px;
+}
