@@ -100,7 +100,7 @@ a{
 .home__servicesText h3 {
   font-size: 2.3rem;
   font-weight: 500;
-  word-spacing: 0.5rem;
+  letter-spacing: 0.1rem;
 }
 
 .home__servicesText p {
@@ -163,13 +163,11 @@ a{
   margin-bottom: 2rem; 
 }
 
-
 .home__boxTypeServices{
   display: flex;
   justify-content: space-between;
   margin-top: 1.5rem;
 }
-
 
 .home__boxServices{
   border: 4px solid black;
@@ -209,7 +207,7 @@ a{
   display: flex;
   justify-content: center;
   align-items: center;
-
+  margin-bottom: 2.5rem;
 }
 
 .home__ctaWhatsapp{
@@ -222,6 +220,7 @@ a{
 .home__whatsappText{
   text-align: center;
   padding: 2rem;
+
 }
 
 .home__whatsappText h3{
@@ -258,4 +257,68 @@ a{
 .home__buttonWhatsapp img{
   width: 63px;
   height: 63px;
+}
+
+
+
+
+
+
+.home__textTransformation{
+ text-align: center;
+ margin-bottom: 2.5rem;
+}
+
+.home__textTransformation h2{
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+}
+
+.home__textTransformation h3{
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.home__textTransformation p{
+  font-size: 1.5rem;
+  margin: auto 8%;
+  margin-top: 2rem;
+}
+
+
+
+
+.home__imagemTransformation{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  grid-template-areas: 
+  "img-1 img-2 img-3"
+  "img-4 img-5 img-6";
+}
+
+.img-1{
+  grid-area: img-1;
+}
+
+.img-2{
+  grid-area: img-2;
+}
+
+.img-3{
+  grid-area: img-3;
+}
+
+.img-4{
+  grid-area: img-4;
+}
+
+.img-5{
+  grid-area: img-5;
+}
+
+.img-6{
+  grid-area: img-6;
 }
