@@ -332,9 +332,7 @@ a{
 
 .home__products{
   background-color: var(--bg-primary-color);
-  height: 276px;
-
-  
+  height: 276px; 
 }
 
 .home__productsItens{
@@ -345,8 +343,6 @@ a{
 .home__productsItens p{
   color: var(--title-primary-color);
   font-size: 1.5rem;
-
-  
 }
 
 .home__imagemProducts{
@@ -355,3 +351,15 @@ a{
   justify-content: space-around;
 }
 
+
+
+
+
+
+
+.home__feedback{
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  font-weight: 500;
+}
