@@ -53,6 +53,8 @@ a{
   margin: 0 auto;
 
   margin-bottom: 2.5rem;
+
+  /* background-color: #29A71A; */
   
 }
 
@@ -322,3 +324,34 @@ a{
 .img-6{
   grid-area: img-6;
 }
+
+
+
+
+
+
+.home__products{
+  background-color: var(--bg-primary-color);
+  height: 276px;
+
+  
+}
+
+.home__productsItens{
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.home__productsItens p{
+  color: var(--title-primary-color);
+  font-size: 1.5rem;
+
+  
+}
+
+.home__imagemProducts{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
