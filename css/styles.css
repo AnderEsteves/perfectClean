@@ -414,7 +414,7 @@ a{
 
 .home__aboutusBox img{
   width: 402px;
-  height: 474px;
+  height: 460px;
   border-radius: 24px;
 }
 
@@ -436,3 +436,54 @@ a{
   padding-top: 2rem;
 }
 
+
+
+
+
+
+
+
+
+.home__socialMedia{
+  max-width: 1140px;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  margin-bottom: 2.5rem;
+  padding-top: 2.5rem;
+}
+
+.home__socialMediaImage{
+  padding-right: 5rem;
+}
+
+.home__socialMediaIcon{
+  width: 73px;
+  height: 73px;
+  border-radius: 50%;
+  background-color: var(--bg-primary-color);
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home__socialText h2{
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.home__socialText p {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: auto 27%;
+  padding-top: 0.5rem;
+}
+
+.home__socialIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1.5rem;
+  margin: auto 30%;
+}
