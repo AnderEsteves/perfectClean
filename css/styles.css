@@ -57,9 +57,14 @@ a{
 
   margin-bottom: 2.5rem;
 
+  /* border: #29A71A solid 3px; */
+
   /* background-color: #29A71A; */
   
 }
+
+
+
 
 .home__imagem{
  background-image: url('../assets/banner-principal.png');
@@ -515,9 +520,12 @@ footer{
 }
 
 
-.home__footerTopics li{
-  list-style: none;
-  margin-top: 0.4rem;
+.home__footerTopics a{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7px;
+  font-weight: 400;
+  
 }
 
 .home__footerLocazation{
