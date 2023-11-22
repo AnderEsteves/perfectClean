@@ -514,6 +514,9 @@ a{
 
 
 
+
+
+
 .home__localization p{
   text-align: center;
   font-size: 2rem;
@@ -521,15 +524,9 @@ a{
   font-weight: 500;
 }
 
-.home__localization img{
-  width: 969px;
-  height: 480px;
-
- 
-  margin: auto 8%;
-  padding-top: 2rem;
+.home__localMap{
+  padding-top: 2.5rem;
 }
-
 
 
 
