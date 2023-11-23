@@ -381,42 +381,47 @@ a{
   margin-top: 2rem;
 }
 
-.home__imagemTransformation{
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
 
-  grid-template-areas: 
-  "img-1 img-2 img-3"
-  "img-4 img-5 img-6";
+
+
+.home__imagemTransformation {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-.img-1{
-  grid-area: img-1;
+.home__imagemTransformation .carousel-images {
+  display: flex;
+  gap: 20px; /* Espaço entre as imagens */
+  animation: scrollImages 30s linear infinite; /* Ajuste a duração conforme desejado */
+  animation-play-state: running; /* Inicia a animação */
 }
 
-.img-2{
-  grid-area: img-2;
+.home__imagemTransformation .carousel-images:hover {
+  animation-play-state: paused; /* Pausa a animação quando o mouse está sobre o carrossel */
 }
 
-.img-3{
-  grid-area: img-3;
+.home__imagemTransformation .carousel-images img {
+  width: 320px; /* Largura desejada */
+  height: 320px; /* Altura desejada */
+  object-fit: cover; /* Mantém a proporção da imagem e preenche o espaço designado */
 }
 
-.img-4{
-  grid-area: img-4;
+/* Esta regra remove a margem da última imagem para evitar espaçamento extra no final */
+.home__imagemTransformation .carousel-images img:last-child {
+  margin-right: 0;
+  margin-left: 20px; /* Adiciona margem à direita da última imagem */
 }
 
-.img-5{
-  grid-area: img-5;
+@keyframes scrollImages {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Move o carrossel para a esquerda para exibir todas as imagens */
+    transform: translateX(calc(-340px * 8 - 220px)); /* Considerando a largura e o espaçamento das imagens */
+  }
 }
-
-.img-6{
-  grid-area: img-6;
-}
-
-
 
 
 
