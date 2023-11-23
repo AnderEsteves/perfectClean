@@ -381,47 +381,15 @@ a{
   margin-top: 2rem;
 }
 
-
-
-
-.home__imagemTransformation {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-}
-
-.home__imagemTransformation .carousel-images {
+.home__imagemTransformation{
   display: flex;
-  gap: 20px; /* Espaço entre as imagens */
-  animation: scrollImages 30s linear infinite; /* Ajuste a duração conforme desejado */
-  animation-play-state: running; /* Inicia a animação */
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 2rem;
 }
 
-.home__imagemTransformation .carousel-images:hover {
-  animation-play-state: paused; /* Pausa a animação quando o mouse está sobre o carrossel */
-}
 
-.home__imagemTransformation .carousel-images img {
-  width: 320px; /* Largura desejada */
-  height: 320px; /* Altura desejada */
-  object-fit: cover; /* Mantém a proporção da imagem e preenche o espaço designado */
-}
-
-/* Esta regra remove a margem da última imagem para evitar espaçamento extra no final */
-.home__imagemTransformation .carousel-images img:last-child {
-  margin-right: 0;
-  margin-left: 20px; /* Adiciona margem à direita da última imagem */
-}
-
-@keyframes scrollImages {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    /* Move o carrossel para a esquerda para exibir todas as imagens */
-    transform: translateX(calc(-340px * 8 - 220px)); /* Considerando a largura e o espaçamento das imagens */
-  }
-}
 
 
 
