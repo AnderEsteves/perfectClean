@@ -42,6 +42,8 @@ nav{
 }
 
 
+
+
 a{
   color: var(--title-primary-color);
   text-decoration: none;
@@ -75,12 +77,8 @@ a{
   display: none;
 }
 
-.mobile__menuIcon img{
-  width: 50px;
-  height: 50px;
-}
 
-.mobile__menu{
+.mobile__navLinks{
   display: none;
 }
 
@@ -598,6 +596,12 @@ footer{
   color: var(--title-primary-color);
 }
 
+/* .desktop__footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+} */
+
 .home__footerLogo{
   display: flex;
   align-items: center;
@@ -713,7 +717,92 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
+
+
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  
+    max-width: 1140px ;
+    padding:  1rem 0;
+    margin: 0 auto; 
+    padding: 2% 0; /*new*/
+    margin-bottom: 2.5rem;
+  }
+
+  nav a {
+    display: none;
+  }
+
+  .mobile__menuIcon{
+    display: block;
+    position: relative;
+  }
+
+  .mobile__menuIcon img{
+    width: 70px;
+    height: 70px;
+  }
+
+  .mobile__menuIcon::after{
+    content: "";
+    position: absolute;
+    transition: opacity 0.3s;
+  }
+
+  .mobile__menuIcon:hover{
+    opacity: 0.7;
+  }
+  
+
+  .mobile__menuIcon button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+
+
+
+
+  .mobile__navLinks{
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+  }
+
+ 
+  .mobile__navLinks.open{
+    display: flex;
+  }
+  
+
+
+
+
+
+
+
+
 
   .home__imagemText{
     max-width: 55%; /*new*/
@@ -721,16 +810,12 @@ footer{
   }
 
 
-  
-
 
   .home__servicesText h3 {
     margin: auto 5%; /*new*/
   }
   
 
-  
-  
 
   .home__cardDescription {
     flex-direction: column-reverse;
@@ -895,8 +980,6 @@ footer{
 
 
 
-
-
   
   .home__socialMedia{
   flex-direction: column;  /*new*/
@@ -914,10 +997,6 @@ footer{
   .home__socialText p {
     padding-bottom: 2rem; /*new*/
   }
-  
-
-
-  
 
   .home__socialMediaImage{
     padding-right: 0rem; /*new*/
@@ -926,132 +1005,26 @@ footer{
 
 
 
-
-  footer{
-    background-color: var(--bg-primary-color);
-    height: fit-content;
-    color: var(--title-primary-color);
-
-    
-  }
-  
   .home__footerLogo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  
-  
-  .home__footer{
-    max-width: 1140px;
-    margin: 0% auto;
-    display: flex;
-    flex-direction: column; /*new*/
-    align-items: center; /*new*/
-    gap: 2.5rem; /*new*/
-    justify-content: space-around;
-    padding: 2rem;
+    display: none; /*new*/
   }
 
-  
-  
-  
-  
-  
-  .home__footerTopics a{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 7px;
-    font-weight: 400;
-  }
-  
-  .home__footerTopics h3{
-    font-size: 2.4rem;
-  }
-  
-  
-  
-  
-  .home__footerLocazation{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .home__footerLocazation h3{
-    font-size: 2.4rem;
-  }
-  
-  .home__footerLocazation p{
-    font-size: 1.6rem;
-  }
   .home__footerLocazation h3:nth-of-type(2){
-    padding-top: 1.5rem;
-   
+    padding-top: 2.8rem; /*new*/
   }
-  
-  
-  
-  
-  
   
   .home__footerContato{
-    text-align: center;
-    gap: 10rem;
+    display: none; /*new*/
   }
-  
-  .home__footerContato > div{
-    padding-bottom: 0.5rem;
-  }
-  
-  .home__footerContato h3{
-    font-size: 2.4rem;
-  }
-  
-  .home__footerContato a{
-    font-size: 1.4rem;
-  }
-  
-  .home__footerContato img{
-    width: 21px;
-    height: 21px;
-  }
-  
-  
-  
-  
-  .home__footerButton{
-    width: 184px;
-    height: 45px;
-    border-radius: 24px;
-    background-color:#25d366 ;
-    cursor: pointer;
-    border: none;
-  
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0.5rem 0.5rem;
-    transition: 0.3s;
-  }
-  
-  .home__footerButton:hover{
-    background-color: #119e45;
-  }
-  
+
   .home__footerDeep{
-    max-width: 1140px;
-    margin: 0% auto;
-    display: flex;
-    justify-content: space-around;
-  
-    border-top: solid var(--title-primary-color) 1px;
-    padding: 1rem 0;
-    font-size: 1.6rem;
+    flex-direction: column; /*new*/
+    text-align: center; /*new*/
   }
+
   
 
+ 
 
 
 
@@ -1065,7 +1038,7 @@ footer{
 
   
 
-}
+
 
 
 
