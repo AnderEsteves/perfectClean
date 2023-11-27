@@ -8,6 +8,4 @@ function menuShow (){
     menuMobile.classList.add('open');
     document.querySelector('.icon').src='assets/close-button.svg';
   }
-
-
 }
