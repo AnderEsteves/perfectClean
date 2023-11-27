@@ -565,7 +565,7 @@ a{
 .home__socialMediaIcon img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ajusta a imagem para preencher o círculo */
+  object-fit: contain; 
 }
 
 
@@ -596,11 +596,7 @@ footer{
   color: var(--title-primary-color);
 }
 
-/* .desktop__footer{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-} */
+
 
 .home__footerLogo{
   display: flex;
@@ -720,18 +716,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 768px) {
 
 
@@ -743,7 +727,7 @@ footer{
     max-width: 1140px ;
     padding:  1rem 0;
     margin: 0 auto; 
-    padding: 2% 0; /*new*/
+    padding: 2% 0; 
     margin-bottom: 2.5rem;
   }
 
@@ -759,6 +743,7 @@ footer{
   .mobile__menuIcon img{
     width: 70px;
     height: 70px;
+   
   }
 
   .mobile__menuIcon::after{
@@ -788,6 +773,7 @@ footer{
     text-align: center;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
+    gap: 2rem;
   }
 
  
@@ -796,23 +782,31 @@ footer{
   }
   
 
+  .mobile__navLinks a{
+    font-size: 2.4rem;
+  }
 
 
 
+
+  .home__imagem{
+    margin: auto 2%;
+    object-fit: scale-down;
+  }
 
 
 
 
 
   .home__imagemText{
-    max-width: 55%; /*new*/
-    gap: 4rem; /*new*/
+    max-width: 55%; 
+    gap: 4rem; 
   }
 
 
 
   .home__servicesText h3 {
-    margin: auto 5%; /*new*/
+    margin: auto 5%; 
   }
   
 
@@ -821,6 +815,7 @@ footer{
     flex-direction: column-reverse;
     height: auto; 
     margin-bottom: 2.5rem;
+    margin: 4% 2%;
   }
 
   .home__cardText {
@@ -828,11 +823,11 @@ footer{
   }
 
   .home__cardText p{
-    font-size: 2.4rem; /*new*/
+    font-size: 2.4rem; 
   }
 
   .home__slideshow {
-    order: -1; /* Muda a ordem da imagem para ser exibida antes do texto */
+    order: -1; 
   }
 
   .home__slides img {
@@ -851,11 +846,11 @@ footer{
       transform: translateX(0);
     }
     66.66% {
-      transform: translateX(-600px); /* Movendo para exibir a segunda imagem */
+      transform: translateX(-600px); 
     }
     100% {
-      transform: translateX(-1000px); /* Movendo para exibir a terceira imagem */
-    }
+      transform: translateX(-1000px);
+    }   
   }
   
 
@@ -875,60 +870,70 @@ footer{
 
 
   .home__boxTypeServices{
-    flex-direction: column; /*new*/
-    row-gap: 3rem; /*new*/
-    align-items: center; /*new*/
+    flex-direction: column; 
+    row-gap: 3rem; 
+    align-items: center; 
   }
   
+
+  .home__boxServices{
+    width: 70%;
+  }
+
+  .home__boxServices ul li{
+    font-size: 3.2rem;
+  }
+
+
 
 
   .home__whatsapp{
-    height: 350px;/*new*/ 
+    height: 350px;
   }
   
   .home__ctaWhatsapp{
-    flex-direction: column;/*new*/ 
-    margin: 0;/*new*/
-    padding-bottom: 2.5rem; /*new*/
+    flex-direction: column; 
+    margin: 0;
+    padding-bottom: 2.5rem; 
 
   }
   
   .home__whatsappText{
-    padding: auto 2rem; /*new*/ 
+    padding: auto 2rem; 
   
   }
   
   .home__whatsappText h3{
-    line-height: 5rem;/*new*/ 
+    line-height: 5rem;
   }
   
   .home__whatsappText p{
-    font-size: 2.4rem; /*new*/ 
+    font-size: 2.4rem; 
   }
   
 
   .home__buttonWhatsapp{
-    width: 350px;/*new*/ 
+    width: 350px;
   }
 
 
 
 
   .home__products{
-    height: 730px; /*new*/ 
+    height: 730px; 
   }
 
   .home__productsItens{
-    padding: 3rem 10rem 3rem 10rem; /*new*/ 
+    padding: 3rem 10rem 3rem 10rem; 
   }
 
   .home__productsItens p {
-    font-size: 3rem; /*new*/ 
+    font-size: 3rem; 
   }
 
   .home__imagemProducts{
-    flex-direction: column; /*new*/ 
-    row-gap: 2rem; /*new*/
+    flex-direction: column;  
+    row-gap: 2rem; 
   }
 
 
@@ -936,12 +941,12 @@ footer{
 
 
   .home__feedback{
-    font-size: 3.5rem; /*new*/ 
-    padding: 3rem 10rem; /*new*/ 
+    font-size: 3.5rem; 
+    padding: 3rem 10rem; 
   }
 
   .home__feedbackBox{
-    margin: auto 5%; /*new*/ 
+    margin: auto 5%; 
   }
 
 
@@ -949,20 +954,20 @@ footer{
 
 
   .home__aboutus{
-    height: 1490px; /*new*/
+    height: 1490px; 
   }
 
   .home__aboutusBox{
-    flex-direction: column; /*new*/ 
+    flex-direction: column; 
   }
 
   .home__aboutusBox img{
-    margin-bottom: 6rem; /*new*/
+    margin-bottom: 6rem; 
   }
     
   .home__aboutusBox p{
-    height: 770px; /*new*/
-    font-size: 2.6rem; /*new*/
+    height: 770px; 
+    font-size: 2.6rem; 
   }
   
   
@@ -970,11 +975,11 @@ footer{
 
 
   .home__localization p{
-    margin: 3rem 10rem 0 10rem; /*new*/
+    margin: 3rem 10rem 0 10rem; 
   }
   
   .home__localMap{
-    margin: auto 5%; /*new*/
+    margin: auto 5%; 
   }
 
 
@@ -982,71 +987,209 @@ footer{
 
   
   .home__socialMedia{
-  flex-direction: column;  /*new*/
+  flex-direction: column;  
   }
 
   .home__socialText{
-    flex-direction: column; /*new*/
-    margin:  5% auto; /*new*/ 
+    flex-direction: column; 
+    margin:  5% auto; 
   }
 
   .home__socialText h2{
-    padding-bottom: 2rem; /*new*/
+    padding-bottom: 2rem; 
   }
   
   .home__socialText p {
-    padding-bottom: 2rem; /*new*/
+    padding-bottom: 2rem; 
   }
 
   .home__socialMediaImage{
-    padding-right: 0rem; /*new*/
+    padding-right: 0rem; 
   }
 
 
 
 
   .home__footerLogo{
-    display: none; /*new*/
+    display: none; 
   }
 
   .home__footerLocazation h3:nth-of-type(2){
-    padding-top: 2.8rem; /*new*/
+    padding-top: 2.8rem; 
   }
   
   .home__footerContato{
-    display: none; /*new*/
+    display: none; 
   }
 
   .home__footerDeep{
-    flex-direction: column; /*new*/
-    text-align: center; /*new*/
+    flex-direction: column; 
+    text-align: center; 
   }
-
-  
-
- 
-
-
-
-
-
 
 
 }
 
-
-
-  
 
 
 
 
 
 @media (max-width: 390px) {
-  .home__section {
-    max-width: 270px;
+
+  .home__imagem{
+    background-image: none;
+    margin-bottom: 15%; 
   }
+
+
+  .home__imagemText{
+    max-width: 100%; 
+    text-align: left; 
+  }
+
+  .home__imagemText p{
+    color: #000000; 
+    padding-right: 6%; 
+    text-align: justify; 
+  }
+
+
+
+
+
+  .home__slides {
+    animation: none;
+  }
+
+  .home__slides img:first-child{
+    display: block;
+  }
+
+
+  
+  
+
+  .home__boxServices{
+    width: 90%;
+  }
+
+  .home__boxServices ul li{
+    font-size: 2.4rem;
+  }
+
+
+
+
+
+
+  .home__whatsapp{
+    height: 580px;
+  }
+  
+  .home__buttonWhatsapp{
+    width: 300px;
+  }
+
+  .home__buttonWhatsapp img{
+    margin-left: 3rem;
+  }
+
+
+
+
+
+  .home__textTransformation{
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+   
+  .home__textTransformation h2{
+    font-size: 3.2rem
+  }
+   
+
+
+
+  .home__products{
+    height: 1100px; 
+  }
+
+ 
+
+
+  .home__feedback{
+    font-size: 2.5rem; 
+    padding: 1rem 4rem;  
+  }
+
+  .home__feedbackBox{
+    margin: auto 5%; 
+  }
+
+
+
+
+
+  .home__aboutus{
+    height: 1800px; 
+  }
+
+
+  .home__aboutusBox img{
+    width: 300px;
+    height: 360px;
+  }
+  
+  .home__aboutusBox p{
+    height: 1200px;
+    padding: 4rem 16rem;
+  }
+  
+  
+
+
+
+  .home__socialIcons {
+    margin: auto 10%;
+  }
+
+  .home__socialMediaImage {
+    margin-top: 5%;
+  }
+
+  .home__socialMediaImage img{
+    width: 300px;
+    height: 300px;
+  }
+
+
+
+
+  .home__footer{
+    flex-direction: column;
+  }
+
+
+  .home__footerLocazation{
+    margin-top: 8%;
+  }
+ 
+
 }
 
+
+@media (max-width: 360px) {
+  
+  .home__imagem{
+    margin-bottom: 36%; /*new 3*/
+  }
+
+  .home__products{
+    height: 1300px; 
+  }
+
+ 
+}
 
 
