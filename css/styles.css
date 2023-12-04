@@ -21,11 +21,15 @@
 }
 
 
-
-html, body {
-  font-family: 'Poppins', sans-serif;
+html{
   font-size: 62.5%;
-  padding-top: 100px;
+  padding-top: 10%;
+ 
+}
+
+body {
+  font-family: 'Poppins', sans-serif; 
+ 
 }
 
 
@@ -33,6 +37,7 @@ html, body {
 
 header { 
   background-color: var(--bg-primary-color);
+  height: 160px;
 
   position: fixed;
   top: 0;
@@ -65,6 +70,32 @@ a{
   font-size: 1.8rem;
   position: relative;
 } 
+
+/* :target::before {
+  content: "";
+  display: block;
+  height: 180px; 
+  margin-top: -80px; 
+  visibility: hidden;
+} */
+
+.botao-flutuante {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  z-index: 999;
+}
+
+.botao-flutuante:hover {
+  background-color: #0056b3;
+}
+
 
 
 .flex{
@@ -133,9 +164,6 @@ a{
  
 }
 
-.home__section:nth-of-type(2) {
-  margin-top: 100px; /* Ajuste esse valor conforme necessário para garantir o espaçamento adequado */
-}
 
 
 
