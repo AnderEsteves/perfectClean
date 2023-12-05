@@ -26,7 +26,6 @@ html{
 
 body {
   font-family: 'Poppins', sans-serif; 
- 
 }
 
 
@@ -139,6 +138,8 @@ a{
   margin-right: auto;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+
+  
 }
 
 
@@ -1405,11 +1406,13 @@ footer{
 
 @media (max-width: 475px) {
   .flex{
-    max-width: 280px;
+    max-width: 320px;
   }
 
   .home__imagem{
     margin-top: 46%;
+    height: auto;
+    margin-bottom: 20%;
   }
 
 
@@ -1420,8 +1423,8 @@ footer{
  
  .home__imagemText p {
    font-size: 2rem;
-   margin: auto 4%;
- }
+   
+  }
  
 
   
@@ -1431,7 +1434,10 @@ footer{
   }
   
   .home__servicesText p {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    
+    padding-top: 16%;
+    margin: 0;
   }
  
 
@@ -1458,7 +1464,8 @@ footer{
   }
   
   .home__boxServices ul li{
-    font-size: 1.8rem;
+    font-size: 2rem;
+    font-weight: 600;
   }
   
   
@@ -1525,6 +1532,7 @@ footer{
  
  .home__products{
    height: auto; 
+   padding-bottom: 5%;
   }
  
  .home__productsItens{
